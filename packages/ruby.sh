@@ -1,8 +1,6 @@
 #!/bin/bash
 
-echo "========================================================================"
-echo "Installing Ruby"
-echo "========================================================================"
+echo "*** Installing Ruby ***"
 
-sudo apt-get install ruby-full
+sudo apt-get -y install ruby-full
 sudo gem install bundler rake rubocop github_changelog_generator boom

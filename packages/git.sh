@@ -1,15 +1,12 @@
 #!/bin/bash
 
-echo "========================================================================"
-echo "Installing Git"
-echo "========================================================================"
+echo "*** Installing Git ***"
 
-sudo apt-get update
-sudo apt-get install git
+sudo apt-get -y install git
 
 currentDir=`pwd`
 
-echo "** Installing git-semver **"
+echo "*** Installing git-semver ***"
 
 mkdir -p $HOME/tools
 cd $HOME/tools

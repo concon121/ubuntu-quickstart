@@ -1,10 +1,8 @@
 #!/bin/bash
 
-echo "========================================================================"
-echo "Installing Vim"
-echo "========================================================================"
+echo "*** Installing Vim ***"
 
-sudo apt-get install vim
+sudo apt-get -y install vim
 
 colors=`find /usr/share/vim | grep "colors$"`
 

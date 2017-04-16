@@ -1,9 +1,6 @@
 #!/bin/bash
 
-echo "========================================================================"
-echo "Installing Apache Maven"
-echo "========================================================================"
+echo "*** Installing Apache Maven ***"
 
-sudo apt-get update
 sudo apt-cache search maven
-sudo apt-get install maven
+sudo apt-get -y install maven

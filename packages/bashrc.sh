@@ -1,8 +1,6 @@
 #!/bin/bash
 
-echo "========================================================================"
-echo "Setting up .bashrc"
-echo "========================================================================"
+echo "*** Setting up .bashrc ***"
 
 IFS=$'\n'
 aliases=(`cat \`dirname $0\`/config/bashrc.conf`)
@@ -14,8 +12,6 @@ do
   then
     echo "Adding line: $a"
     echo "$a" >> $HOME/.bashrc
-  else
-    echo "Line is already present: $a"
   fi
 done
 
