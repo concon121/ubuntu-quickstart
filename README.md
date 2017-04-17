@@ -76,10 +76,8 @@ Installs Ruby along with any globally used gems.
 
 *   [Bundler](http://bundler.io/) - Ruby gem management.
 *   [Rake](https://github.com/ruby/rake) - A make-like build utility for Ruby.
-*   [Rubocop](https://github.com/bbatsov/rubocop) - A Ruby static code analyzer, based on the community Ruby style
-*   guide.
-*   [github_changelog_generator](https://github.com/skywinder/github-changelog-generator) - Automatically generate
-*   change log from your tags, issues, labels and pull requests on GitHub.
+*   [Rubocop](https://github.com/bbatsov/rubocop) - A Ruby static code analyzer, based on the community Ruby style guide.
+*   [github_changelog_generator](https://github.com/skywinder/github-changelog-generator) - Automatically generate change log from your tags, issues, labels and pull requests on GitHub.
 *   [boom](https://github.com/holman/boom) - Save text snippets in the command line.
 
 ## Shell
