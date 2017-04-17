@@ -6,6 +6,8 @@ currentDir=`pwd`
 mkdir -p "${HOME}/tools"
 cd "${HOME}/tools"
 
+set -x
+
 git clone git@github.com:concon121/atom-quickstart.git
 cd atom-quickstart
 make ORIGIN=git@github.com:concon121/atom-quickstart.git USER=connor
