@@ -1,8 +1,8 @@
 #!/bin/bash
 
 echo "========================================================================"
-echo "Installing Python"
+echo "Installing GoLang"
 echo "========================================================================"
 
-sudo -H pip3 install --upgrade pip
-sudo -H pip3 install thefuck awscli saws
+sudo ln -s --force /usr/lib/go-1.9/bin/go /usr/bin/go
+sudo ln -s --force /usr/lib/go-1./bin/gofmt /usr/bin/gofmt

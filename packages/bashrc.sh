@@ -1,17 +1,19 @@
 #!/bin/bash
 
-echo "*** Setting up .bashrc ***"
+echo "========================================================================"
+echo "Installing .bashrc"
+echo "========================================================================"
+
 
 IFS=$'\n'
-aliases=(`cat \`dirname $0\`/config/bashrc.conf`)
 
-for a in "${aliases[@]}"
-do
-  exists=`grep -F "$a" $HOME/.bashrc`
-  if [ -z "$exists" ]
-  then
-    echo "Adding line: $a"
-    echo "$a" >> $HOME/.bashrc
-  fi
-done
+cp `dirname $0`/config/bashrc.conf $HOME/.custom.bashrc
 
+loadCustom=". ./.custom.bashrc"
+
+if [[ `grep "${loadCustom}" ~/.bashrc | wc -l` -eq 0 ]]
+then
+  echo ${loadCustom} >> ~/.bashrc
+fi
+
+echo ". `dirname $0`/../install.sh" >> ~/.custom.bashrc
