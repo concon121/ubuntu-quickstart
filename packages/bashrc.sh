@@ -9,11 +9,9 @@ IFS=$'\n'
 
 cp `dirname $0`/config/bashrc.conf $HOME/.custom.bashrc
 
-loadCustom=". ./.custom.bashrc"
+loadCustom=". ~/.custom.bashrc"
 
 if [[ `grep "${loadCustom}" ~/.bashrc | wc -l` -eq 0 ]]
 then
   echo ${loadCustom} >> ~/.bashrc
 fi
-
-echo ". `dirname $0`/../install.sh" >> ~/.custom.bashrc
